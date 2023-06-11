@@ -33,7 +33,7 @@ section{
 }
 
 .header-flex{
-	height: 180px;
+	height: 160px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -58,7 +58,7 @@ img{
 
 .header-menu a{
 	text-decoration: none;
-	color: darkslateblue;
+	color: darkslategrey;
 	font-size: 20px;
 	font-weight: 400;
 }
