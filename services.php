@@ -25,10 +25,10 @@
 				<nav>
 					<ul class="header-menu">
 						<li><a href="index.php">home</a></li>
-						<li><a href="">about</a></li>
+						<li><a href="#">about</a></li>
 						<li><a href="services.php">services</a></li>
-						<li><a href="">portfolio</a></li>
-						<li><a href="">contact</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">contact</a></li>
 					</ul>
 				</nav>
 
