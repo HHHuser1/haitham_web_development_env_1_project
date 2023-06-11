@@ -1,0 +1,411 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: raleway;
+}
+
+section{
+	padding: 80px 0;
+}
+
+
+
+.container{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.logo{
+
+}
+
+.page-header{
+	background: darkgray;
+/*	position: fixed;*/
+	width: 100%;
+	transition: .5s;
+}
+
+.header-flex{
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+.logo{
+	width: 190px;
+}
+
+.header-menu{
+	list-style: none;
+	display: flex;
+	gap: 40px;
+	color: white;
+}
+
+.header-menu a{
+	text-decoration: none;
+	color: darkslateblue;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+
+
+
+.banner{
+	background: url('../images/banner.png') rgba(0, 0, 0, 60%);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	text-align: center;
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner h1{
+	text-transform: uppercase;
+	font-size: 55px;
+}
+
+.textbox{
+	color: white;
+	max-width: 500px;
+}
+
+.about-flex{
+	display: flex;
+	align-items: center;
+	gap: 80px;
+}
+
+.bar{
+	background: black;
+	width: 70px;
+	height: 6px;
+	margin: 30px 0;
+	transform: translateX(-25px);
+}
+
+h3{
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.left{
+	width: 50%;
+	line-height: 1.5;
+}
+
+/*.left h2{
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}*/
+
+h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+
+/*.left p{
+	font-size: 20px;
+	margin-bottom: 15px;
+}*/
+
+p{
+	font-size: 15px;
+	line-height: 2 ;
+/*	margin-bottom: 15px;*/
+}
+
+
+.right{
+	width: 50%;
+	background: url('../images/small.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 550px;
+}
+
+
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	background-color: transparent;
+	border: 3px solid black;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-top: 40px;
+	transition: 0.5s;
+}
+
+.btn:hover{
+	background-color: lightskyblue;
+}
+
+
+/* THE FOUR IMAGES SECTION */
+
+
+.fourcard{
+	background: #85B1A7;
+}
+
+/*.fourcard h2{
+	font-family: arial;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}*/
+
+.cardflex{
+	display: flex;
+/*	justify-content: center;*/
+/*	flex-wrap: wrap;*/
+/*	align-items: center;*/
+	gap: 40px;
+}
+
+/** if NOT using gap then use "BOTH" 
+top-bottom and left-right MARGINS in the card class.
+for example if NO gap then use margin: 40px 20px;
+top and bottom margins are double left and right margins.
+
+if not using gap then use flex-wrap:wrap and use the 
+width: calc(100% - 40px / 2) method below.
+
+BEST thing is to use GAP.
+**/
+
+
+.card{
+	border: 10px solid white;
+/*	padding: 50px;*/
+	margin: 40px 0px;
+/*	background: white;*/
+	box-shadow: 20px 20px 10px grey;
+/*	width: calc(100% - 80px / 2);*/
+}
+
+/*To make the white lines around the cards above either use the
+SOLID WHITE BORDER or use Padding with a white background*/
+
+.cardleft{
+	width: 50%;
+}
+
+.cardright{
+	width: 50%;
+}
+
+.fourcard .card .grey-box{
+	background: rgba(0, 0, 0, 50%);
+	color: white;
+	text-align: center;
+	padding: 25px;
+	width: 100%;
+	height: 25%;
+	opacity: 0%;
+	transition: .5s;
+}
+
+.fourcard .card:hover .grey-box{
+	opacity: 100%;
+	height: 65%;
+}
+
+.grey-box h4{
+	font-size: 20px;
+}
+
+
+.topleft-img{
+	background-image: url('../images/flowers.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 550px;
+	display: flex;
+	align-items: flex-end;
+/*	padding-top: 320px;*/
+/*	width: 400px;
+/*	border: 10px solid white;*/
+}
+
+.topright-img{
+	background-image: url('../images/banana.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+	display: flex;
+	align-items: flex-end;
+/*	padding-top: 150px;*/
+/*	width: 400px;
+/*	border: 10px solid white;*/
+}
+
+.bottomleft-img{
+	background-image: url('../images/building-curved-wall.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+	display: flex;
+	align-items: flex-end;
+/*	width: 400px;*/
+/*	border: 10px solid white;*/
+}
+
+.bottomright-img{
+	background-image: url('../images/cofeecup.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 550px;
+	display: flex;
+	align-items: flex-end;
+/*	width: 400px;*/
+/*	border: 10px solid white;*/
+}
+
+
+.fourcard .container{
+	text-align: center;
+}
+
+.fourcard-btn{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	background-color: transparent;
+	border: 3px solid white;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	transition: 0.5s;
+}
+
+.fourcard-btn:hover{
+	background-color: lightskyblue;
+}
+
+
+
+
+
+/*FEATURED SERVICES*/
+
+.service-flex{
+	display: flex;
+	align-items: center;
+/*	justify-content: center;*/
+/*	justify-content: space-between;*/
+/*	flex-wrap: wrap;*/
+	gap: 100px;
+}
+
+.serviceleft{
+	width: 50%;
+}
+
+.serviceright{
+	width: 50%;
+}
+	
+.service-card-flex{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.service-card{
+/*	border: 1px solid black !important;*/
+/*	box-shadow: 5px 10px 20px grey;*/
+/*	padding: 80px 19px;*/
+/*	border-radius: 5px;*/
+	width: calc((100% - 50px) / 2);
+	text-align: left;
+}
+
+.service-card h3{
+	text-transform: capitalize;
+/*	font-size: 22px;*/
+/*	font-family: raleway;*/
+/*	font-weight: 300;*/
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+.cta{
+	background-color: #24C390;
+	text-align: center;
+	display: flex;
+	color: white;
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	padding: 20px 0;*/
+
+}
+
+.cta .container{
+	max-width: 600px;
+}
+
+
+.cta h4{
+	text-transform: capitalize;
+	color: white;
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 25px;
+}
+
+.cta-btn{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 20px 30px;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-top: 35px;
+	transition: 0.5s;
+}
+
+.cta-btn:hover{
+	background-color: royalblue;
+}
