@@ -19,7 +19,7 @@
 		<div class="container">
 			<div class="header-flex">
 				
-				<div class="logo"><a href=""><img src="./assets/images/logo.png" alt="LOGO here"></a></div>
+				<div class="logo"><a href="index.php"><img src="./assets/images/logo.png" alt="LOGO here"></a></div>
 
 
 				<nav>
