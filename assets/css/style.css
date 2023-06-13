@@ -21,9 +21,7 @@ section{
 	width: 90%;
 }
 
-.logo{
 
-}
 
 .page-header{
 	background: darkgray;
@@ -33,7 +31,7 @@ section{
 }
 
 .header-flex{
-	height: 160px;
+	height: 140px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -46,7 +44,7 @@ img{
 }
 
 .logo{
-	width: 190px;
+	width: 80px;
 }
 
 .header-menu{
